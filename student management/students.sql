@@ -3,13 +3,17 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2021 at 01:03 PM
+-- Generation Time: Sept 11, 2023 at 01:03 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
+create database students;
+drop table attendence;
+drop table department;
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -26,7 +30,6 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `attendence`
 --
-
 CREATE TABLE `attendence` (
   `aid` int(11) NOT NULL,
   `rollno` varchar(20) NOT NULL,
@@ -38,7 +41,7 @@ CREATE TABLE `attendence` (
 --
 
 INSERT INTO `attendence` (`aid`, `rollno`, `attendance`) VALUES
-(6, '1ve17cs012', 98);
+(1, 'pes2ug21cs001', 82);
 
 -- --------------------------------------------------------
 
@@ -60,8 +63,9 @@ INSERT INTO `department` (`cid`, `branch`) VALUES
 (3, 'Electronic and Communication'),
 (4, 'Electrical & Electronic'),
 (5, 'Civil '),
-(7, 'computer science'),
-(8, 'IOT');
+(7, 'Computer Science'),
+(8, 'IOT'),
+(9, 'Mechanical');
 
 -- --------------------------------------------------------
 
@@ -242,3 +246,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+show databases;
+show tables;
