@@ -10,7 +10,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -64,7 +63,6 @@
 
   <main id="main">
 
-
   {% block body %}
   
 {% with messages=get_flashed_messages(with_categories=true) %}
@@ -74,17 +72,12 @@
 <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
     {{message}}
 
-  
 </div>
-
 
   {% endfor %}
   {% endif %}
   {% endwith %}
   {% endblock body %}
-
-
-
 
   <!-- Vendor JS Files -->
   <script src="static/assets/vendor/jquery/jquery.min.js"></script>
@@ -97,7 +90,6 @@
   <script src="static/assets/vendor/hoverIntent/hoverIntent.js"></script>
   <script src="static/assets/vendor/aos/aos.js"></script>
   
-
   <!-- Template Main JS File -->
   <script src="static/assets/js/main.js"></script>
 

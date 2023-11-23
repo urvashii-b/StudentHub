@@ -3,8 +3,6 @@
 Add Department
 {% endblock title %}
 
-
-
 {% block body %}
  <h3 class="text-center bg-danger text-white"><span>Add Department</span> </h3>
   
@@ -14,7 +12,6 @@ Add Department
 
 <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
     {{message}}
-
 
 </div>
   {% endfor %}
@@ -30,24 +27,17 @@ Add Department
 
 <form action="/department" method="post">
 
-
 <div class="form-group">
 <label for="dept">Enter Department</label>
 <input type="text" class="form-control" name="dept" id="dept">
 </div>
 <br>
-
   <button type="submit" class="btn btn-danger btn-sm btn-block">Add Department</button>
 </form>
 <br>
 <br>
-
 </div>
-
 <div class="col-md-4"></div>
-
 </div></div>
-
-
 
 {% endblock body %}

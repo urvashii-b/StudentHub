@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
@@ -46,15 +45,10 @@
  <li><a href="/addstudent">Students</a></li>
  <li><a href="/addattendance">Attendance</a></li>
  <li><a href="/department">Department</a></li>
- <li><a href="/triggers">Records</a></li>
- <li><a href="/studentdetails">Student Details</a></li>
+ <li><a href="/triggers">Trigger-Records</a></li>
+ <li><a href="/studentdetails">Student-Details</a></li>
  <li><a href="/search">Search</a></li>
        
-    
-          <li><a href="/about">About</a></li>
-          
-   
-
     {% if current_user.is_authenticated  %}
           <li class="buy-tickets"><a href="">Welcome {{current_user.username}}</a></li>
             <li class="buy-tickets"><a href="/logout">Logout</a></li>
@@ -70,14 +64,13 @@
   <!-- ======= Intro Section ======= -->
  <section id="intro">
     <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 class="mb-4 pb-0">STUDENT MANAGEMENT SYSTEM</span> </h1>
-      <!-- <p class="mb-4 pb-0">DBMS Mini Project by Urvashi & Teresha</p> -->
+      <h1 class="mb-4 pb-0">Studenthub</span> </h1>
+      <p class="mb-4 pb-0">DBMS Mini Project by Urvashi & Teresha</p>
     
-      <a href="" class="about-btn scrollto">Welcome</a>
+      <a href="" class="about-btn scrollto">View More</a>
     </div>
   </section><!-- End Intro Section -->
   <main id="main">
-
 
   {% block body %}
   
@@ -88,15 +81,12 @@
 <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
     {{message}}
 
-
 </div>
-
 
   {% endfor %}
   {% endif %}
   {% endwith %}
   {% endblock body %}
-
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
@@ -110,7 +100,6 @@
   <script src="static/assets/vendor/superfish/superfish.min.js"></script>
   <script src="static/assets/vendor/hoverIntent/hoverIntent.js"></script>
   <script src="static/assets/vendor/aos/aos.js"></script>
-  
 
   <!-- Template Main JS File -->
   <script src="static/assets/js/main.js"></script>
