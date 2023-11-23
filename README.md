@@ -19,51 +19,50 @@
 - MySQL: A popular relational database management system.
 - Other dependencies can be found in the `requirements.txt` file.
 
-## Installation
+## Setup Instructions
 
-1. Clone this repository to your local machine:
+1. **Clone Repository:**
    ```bash
    git clone https://github.com/urvashii-b/StudentHub.git
    ```
 
-2. Navigate to the project directory and create a virtual environment (optional but recommended):
+2. **Run XAMPP:**
+   - Start Apache and MySQL from XAMPP.
+   - If MySQL suddenly stops after starting, terminate it from the Task Manager.
+
+3. **Create Conda Environment:**
    ```bash
-   cd studentHub
-   python -m venv venv
+   conda create --name dbms
    ```
 
-3. Activate the virtual environment:
-   - On Windows:
-     ```bash
-     venv\Scripts\activate
-     ```
-   - On macOS and Linux:
-     ```bash
-     source venv/bin/activate
-     ```
+4. **Activate Environment:**
+   ```bash
+   conda activate dbms
+   ```
 
-4. Install project dependencies:
+5. **Navigate to Project Directory:**
+   ```bash
+   cd student management
+   ```
+
+6. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Create a MySQL database and configure your database connection in the `config.py` file.
-
-6. Initialize the database:
+7. **Run Project:**
    ```bash
-   flask db init
-   flask db migrate
-   flask db upgrade
+   python main.py
    ```
 
-7. Start the application:
+   Access the project at [http://127.0.0.1:5000/](http://127.0.0.1:5000/).
+
+8. **Deactivate Conda Environment:**
    ```bash
-   flask run
+   conda deactivate
    ```
 
-## Usage
-
-- Access the application by navigating to `http://localhost:5000` in your web browser.
+Feel free to reach out if you encounter any issues or need further assistance.
 
 Happy coding!
 
