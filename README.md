@@ -4,7 +4,7 @@
 
 ## Project Report
 
-View my project report here: reports/Project Report.pdf
+View my project report here: [StudentHub](reports/Project%20Report.pdf)
 
 ## Description
 
