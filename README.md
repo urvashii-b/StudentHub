@@ -2,6 +2,10 @@
 
 ![image](https://github.com/urvashii-b/StudentHub/assets/130129236/f2531794-b940-4b8f-8b27-cd66f41c599e)
 
+## Project Report
+
+View my project report here: reports/Project Report.pdf
+
 ## Description
 
 **StudentHub** is a Database Management System project that uses Flask and MySQL to manage student-related information.
