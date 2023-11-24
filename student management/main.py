@@ -22,7 +22,7 @@ def load_user(user_id):
 
 
 # app.config['SQLALCHEMY_DATABASE_URL']='mysql://username:password@localhost/databas_table_name'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/studentdbms'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/dbb'
 db=SQLAlchemy(app)
 
 # here we will create db models that is tables
